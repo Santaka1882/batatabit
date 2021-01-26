@@ -20,6 +20,7 @@
 html {
     font-size: 62.5%;
     font-family: 'DM sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -459,4 +460,136 @@ main {
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--just-white);
+}
+
+.main__plan-container {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding-bottom: 64px;
+    text-align: center;
+    background-color: var(--off-white);
+}
+
+.plan-container--title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 50px;
+}
+
+.plan-container--title h2 {
+    margin-bottom: 24px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+}
+
+.plan-container--title p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+.plan-card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 10px 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    font-family: 'Inter', sans-serif;
+}
+
+.plan-card .recommend {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 60px);
+    display: inline-block;
+    width: 120px;
+    height: 31px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.4rem;
+    padding: 8px;
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+    border-radius: 8px;
+}
+
+.plan-card--information h3 {
+    padding-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'DM sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #000000;
+}
+
+.plan-card--information .price span {
+    position: relative;
+    top: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    vertical-align: text-top;
+}
+
+.plan-card--information .price {
+    margin-bottom: 16px;
+    font-size: 5.2rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.plan-card--information .saving {
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: #757575;
+}
+
+.plan-card--information .plan-card-button {
+    width: 150px;
+    height: 48px;
+    background-color: var(--off-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 5px;
+    font-family: 'DM sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+}
+
+.plan-card-button span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+    vertical-align: text-bottom;
+    background-image: url(../assets/icons/orange-right-arrow.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
