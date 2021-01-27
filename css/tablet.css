@@ -1,0 +1,23 @@
+.main__tables-container {
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.product-cards--container {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto;
+}
+
+.product-card {
+    min-height: 150px;
+    margin: 0 auto;
+}
+
+.card-slider {
+    justify-content: center;
+}
